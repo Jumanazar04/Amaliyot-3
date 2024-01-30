@@ -67,12 +67,26 @@
 
 // console.log(newWord);
 
-const num = [ 1, 2, 3, -4, -2, -9, 10, -7, 8, 12, 2 ];
-let number = 0;
+// const num = [ -1, 1, 2, -0.2];
+// let number = 0;
 
-num.forEach((item) =>{
-    number += item;
+// num.forEach((item) =>{
+//     if( item > 0.0 && Math.floor(item) === item && item != Infinity){
+//         number += item;
+//     }
+// })
 
+// console.log(number);
+
+
+let text = 'qaleszaxir';
+let newText = text.split('');
+let textOne = '';
+
+newText.forEach((item) =>{
+    if(item == 'a'){
+        textOne += item;
+    }
 })
 
-console.log(number);
+console.log(textOne.length);
