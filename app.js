@@ -37,17 +37,42 @@
 
 // console.log(newArray);
 
-function reverseString(str) {
-    return str.split('').reverse().join('');
-}
+// function reverseString(str) {
+//     return str.split('').reverse().join('');
+// }
 
-var originalString = "Samarkand";
-var reversedString = reverseString(originalString);
-console.log(reversedString); // natnamkaS
+// var originalString = "Samarkand";
+// var reversedString = reverseString(originalString);
+// console.log(reversedString); // natnamkaS
 
-let str = 'Andijan';
-let newStr = str.split('').reverse().join('');
-console.log(newStr);
-let myName = 'Jumanazar';
-let newMyName = reverseString(myName);
-console.log(newMyName);
+// let str = 'Andijan';
+// let newStr = str.split('').reverse().join('');
+// console.log(newStr);
+// let myName = 'Jumanazar';
+// let newMyName = reverseString(myName);
+// console.log(newMyName);
+
+
+// let newText = prompt('Ismingizni kiriting:');
+// let array = newText;
+// let newArray = array.split(' ');
+// let newWord = ''
+
+// newArray.forEach((item) => {
+//     const boshi = item[0].toUpperCase();
+//     const spliceBoshi = item.slice(1, item.length).toLowerCase();
+
+//     newWord += ' ' + boshi + spliceBoshi;
+// })
+
+// console.log(newWord);
+
+const num = [ 1, 2, 3, -4, -2, -9, 10, -7, 8, 12, 2 ];
+let number = 0;
+
+num.forEach((item) =>{
+    number += item;
+
+})
+
+console.log(number);
