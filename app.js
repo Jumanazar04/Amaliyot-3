@@ -79,14 +79,45 @@
 // console.log(number);
 
 
-let text = 'qaleszaxir';
-let newText = text.split('');
-let textOne = '';
+// let text = 'qaleszaxirA';
+// let newText = text.split('');
+// let textOne = '';
 
-newText.forEach((item) =>{
-    if(item == 'a'){
-        textOne += item;
-    }
-})
+// newText.forEach((item) =>{
+//     if(item == 'a' || item == 'A'){
+//         textOne += item;
+//     }
+// })
 
-console.log(textOne.length);
+// console.log(textOne.length);
+
+// let array = [221, 'Salom', true, [1, 2, 3, false], null, undefined, 'Assalomu aleykum'];
+// let newArray = [];
+
+// array.forEach((item) => {
+//     newArray.push(typeof item)
+// })
+
+// console.log(newArray);
+
+// const text = 'Jumanazar';
+// let newText = text.lastIndexOf(text.slice(-1)) + 1;
+// console.log(newText);
+
+// const num = [1, 2, 3, 4, 5];
+// let result = [];
+
+// num.forEach((numbers, i)=>{
+//     result.push(numbers + i)
+// })
+
+// console.log(result);
+
+// let num = 100;
+// let result = 0;
+
+// for(let i = 1; i <= num; i++){
+//     result += i;
+// }
+
+// console.log(result);
