@@ -207,18 +207,27 @@ let result = [];
 // console.log(me.about());
 
 
-const main = document.querySelector('main');
-const title = document.querySelector('h1');
+// const main = document.querySelector('main');
+// const title = document.querySelector('h1');
 
-console.log(main.children);
-const aray = Array.from(main.children);
+// console.log(main.children);
+// const aray = Array.from(main.children);
 
-aray.forEach((child) =>{
-  if (child.textContent.includes('error')) {
-    child.classList.add('error')
-  } else if (child.textContent.includes('succes')){
-    child.classList.add('succes')
-  }
+// aray.forEach((child) =>{
+//   if (child.textContent.includes('error')) {
+//     child.classList.add('error')
+//   } else if (child.textContent.includes('succes')){
+//     child.classList.add('succes')
+//   }
+// })
+
+// title.previousElementSibling.style.textAlign = 'end'
+
+
+const items = document.querySelectorAll('p');
+
+items.forEach((item, i) =>{
+  item.addEventListener('click', (e)=>{
+      console.log(e.target);
+  })
 })
-
-title.previousElementSibling.style.textAlign = 'end'
