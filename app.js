@@ -140,8 +140,10 @@
 
 // console.log(result);
 
-let array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
+// let array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
 let result = [];
+
+
 
 // for (let i = 0; i < array.length; i++) {
 //     if(Math.round(array[i] % 3) == 0 ){
@@ -160,16 +162,63 @@ let result = [];
 // }
 // console.log(result);
 
-array.forEach((item) =>{
-    if(Math.round(item % 3) == 0 && Math.round(item % 5) != 0 ){
-        result.push('fizz');
-    }else if (Math.round(item % 5) == 0 && Math.round(item % 3) != 0 ){
-        result.push('buzz');
-    }else if (Math.round(item % 5) == 0 || Math.round(item % 3) == 0 ){
-        result.push('fizzbuzz');
-    }else {
-        result.push(item)
-    }
+
+// function fizzBuzz  (item){
+//     for (let i = 1; i <= item; i++) {
+//         if(Math.round(i % 3) == 0 && Math.round(i % 5) != 0 ){
+//             result.push('fizz');
+//         }else if (Math.round(i % 5) == 0 && Math.round(i % 3) != 0 ){
+//             result.push('buzz');
+//         }else if (Math.round(i % 15) == 0 ){
+//             result.push('fizzbuzz');
+//         }else {
+//             result.push(i)
+//         }
+//     }
+// }
+
+// array.forEach((item) =>{
+//     if(Math.round(item % 3) == 0 && Math.round(item % 5) != 0 ){
+//         result.push('fizz');
+//     }else if (Math.round(item % 5) == 0 && Math.round(item % 3) != 0 ){
+//         result.push('buzz');
+//     }else if (Math.round(item % 5) == 0 || Math.round(item % 3) == 0 ){
+//         result.push('fizzbuzz');
+//     }else {
+//         result.push(item)
+//     }
+// })
+// fizzBuzz(100);
+// console.log(result);
+
+// const me = {
+//     name: 'Jumanazar',
+//     age: 20,
+//     study: 'Universitet',
+//     location: 'Andijan',
+//     // lang: [Uz, Eng, Rus],
+//     // sport: [footbal, tennis, chess],
+//     about: function (){
+//       return  `My name is ${this.name}. I am ${this.age}. I study ${this.study}. I am from ${this.location}. I can speak three language ` 
+//     }
+
+// }
+
+// console.log(me.about());
+
+
+const main = document.querySelector('main');
+const title = document.querySelector('h1');
+
+console.log(main.children);
+const aray = Array.from(main.children);
+
+aray.forEach((child) =>{
+  if (child.textContent.includes('error')) {
+    child.classList.add('error')
+  } else if (child.textContent.includes('succes')){
+    child.classList.add('succes')
+  }
 })
 
-console.log(result);
+title.previousElementSibling.style.textAlign = 'end'
