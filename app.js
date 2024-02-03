@@ -224,10 +224,13 @@ let result = [];
 // title.previousElementSibling.style.textAlign = 'end'
 
 
-const items = document.querySelectorAll('p');
+// const items = document.querySelectorAll('p');
 
-items.forEach((item, i) =>{
-  item.addEventListener('click', (e)=>{
-      console.log(e.target);
-  })
-})
+// items.forEach((item, i) =>{
+//   item.addEventListener('click', (e)=>{
+//       console.log(e.target);
+//   })
+// })
+
+
+
