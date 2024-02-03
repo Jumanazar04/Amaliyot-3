@@ -20,6 +20,7 @@ main {
     background-image: url("./mesr.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    transition: .5s;
 }
 
 .text {
@@ -75,5 +76,5 @@ main {
 }
 
 .main__hidden {
-    opacity: .5;
+    background-image: url("./overlay.jpg");
 }

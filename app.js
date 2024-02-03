@@ -237,10 +237,18 @@ let result = [];
 const btn = document.querySelector('.btn');
 const textHidden = document.querySelector('.text__hidden');
 const main = document.querySelector('main');
+const btnHidden = document.querySelector('.btn__hidden');
 
 btn.addEventListener('click', (e)=>{
   e.preventDefault()
   textHidden.classList.remove('hidden');
   main.classList.add('main__hidden');
 
+})
+
+btnHidden.addEventListener('click', (e)=>{
+  e.preventDefault()
+
+  textHidden.classList.add('hidden');
+  main.classList.remove('main__hidden')
 })
