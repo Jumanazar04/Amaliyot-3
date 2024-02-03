@@ -59,7 +59,7 @@ main {
     border-radius: 5px;
     position: absolute;
     background-color: grey;
-    order: 1;
+    z-index: 999999999;;
 }
 
 .nav {
@@ -71,10 +71,16 @@ main {
     padding-bottom: 10px;
 }
 
-.hidden {
+.hidden, .overlay__hidden {
     display: none;
 }
 
-.main__hidden {
-    background-image: url("./overlay.jpg");
-}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+  }
