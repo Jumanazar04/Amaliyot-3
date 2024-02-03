@@ -5,3 +5,75 @@
 .error {
     color: red;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./mesr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    width: 400px;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.btn {
+    max-width: 120px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightblue;
+    transition: 1s;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: blue;
+    transform: scale(1.2);
+}
+
+.text__hidden {
+    width: 600px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: grey;
+    order: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.main__hidden {
+    opacity: .5;
+}
