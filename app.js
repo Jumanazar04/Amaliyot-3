@@ -234,35 +234,38 @@ let result = [];
 
 
 
-const btn = document.querySelector('.btn');
-const textHidden = document.querySelector('.text__hidden');
-const main = document.querySelector('.overlay');
-const btnHidden = document.querySelector('.btn__hidden');
+// const btn = document.querySelector('.btn');
+// const textHidden = document.querySelector('.text__hidden');
+// const main = document.querySelector('.overlay');
+// const btnHidden = document.querySelector('.btn__hidden');
 
-btn.addEventListener('click', (e)=>{
-  e.preventDefault()
-  textHidden.classList.remove('hidden');
-  main.classList.remove('overlay__hidden');
+// btn.addEventListener('click', (e)=>{
+//   e.preventDefault()
+//   textHidden.classList.remove('hidden');
+//   main.classList.remove('overlay__hidden');
 
-})
+// })
 
-function addHidden () {
-  textHidden.classList.add('hidden');
-  main.classList.add('overlay__hidden')
-}
+// function addHidden () {
+//   textHidden.classList.add('hidden');
+//   main.classList.add('overlay__hidden')
+// }
 
-btnHidden.addEventListener('click', (e)=>{
-  e.preventDefault()
-  addHidden();
-});
+// btnHidden.addEventListener('click', (e)=>{
+//   e.preventDefault()
+//   addHidden();
+// });
 
-main.addEventListener('click', ()=>{
-  addHidden();
-})
+// main.addEventListener('click', ()=>{
+//   addHidden();
+// })
 
-document.addEventListener('keydown', (e) =>{
-  console.log(e);
-  if(e.key == 'Enter'){
-    addHidden();
-  }
-})
+// document.addEventListener('keydown', (e) =>{
+//   console.log(e);
+//   if(e.key == 'Enter'){
+//     addHidden();
+//   }
+// })
+
+const regEx = /^[a-zA-Z0-9]{4, 9}$/;
+const text = 'jumanazar';
